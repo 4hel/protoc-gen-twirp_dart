@@ -9,7 +9,7 @@ LDFLAGS := -ldflags "-X main.Timestamp=${TIMESTAMP} -X main.Commit=${COMMIT} -X 
 all: clean test install
 
 install:
-	go install ${LDFLAGS} github.com/captainbeardo/protoc-gen-twirp_dart
+	go install ${LDFLAGS} github.com/4hel/protoc-gen-twirp_dart
 
 test:
 	go test -v ./...

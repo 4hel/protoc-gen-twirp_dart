@@ -35,6 +35,7 @@ abstract class {{.Name}} {
 }
 
 class {{.Name}}ProtobufClient implements {{.Name}} {
+	String token = "";
 	final String hostname;
 	final String pathPrefix;
 	Client _httpClient = Client();
@@ -52,7 +53,8 @@ class {{.Name}}ProtobufClient implements {{.Name}} {
 		final body = request.writeToBuffer();
 		final headers = {
 			'Content-Type': _protobufContentType,
-			'Content-Length': body.length.toString()
+			'Content-Length': body.length.toString(),
+			'Authorization': token
 		};
 
 		final response = await _httpClient.post(uri, headers: headers, body: body);

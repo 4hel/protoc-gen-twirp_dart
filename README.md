@@ -2,7 +2,11 @@
 
 A protoc plugin for generating a twirp client suitable for web and flutter/io projects. Inspired by the [Twirp typescript plugin](https://github.com/larrymyers/protoc-gen-twirp_typescript).
 
-Based off the plugin [apptreesoftware/protoc-gen-twirp_dart](https://github.com/apptreesoftware/protoc-gen-twirp_dart) and modifications from [marwan-at-work/protoc-gen-twirp_dart](https://github.com/marwan-at-work/protoc-gen-twirp_dart). This plugin will output a protobuf based client instead of a JSON based client. It also removes some external dependencies.
+Based off the plugin [apptreesoftware/protoc-gen-twirp_dart](https://github.com/apptreesoftware/protoc-gen-twirp_dart) and modifications from [marwan-at-work/protoc-gen-twirp_dart](https://github.com/marwan-at-work/protoc-gen-twirp_dart) and [captainbeardo/protoc-gen-twirp_dart](https://github.com/captainbeardo/protoc-gen-twirp_dart)
+
+change by 4hel: add support *Authorization http header*
+
+This plugin will output a protobuf based client instead of a JSON based client. It also removes some external dependencies.
 
 ## Setup
 
